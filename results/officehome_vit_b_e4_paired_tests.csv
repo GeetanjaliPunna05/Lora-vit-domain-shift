@@ -1,0 +1,9 @@
+A,B,mean_diff_pts,n_pairs,A_wins,p_value
+early,r4,-0.24,12,3,0.223
+late,r4,-0.8,12,2,0.0255
+early,late,0.56,12,7,0.1982
+mlp4,attn10,1.08,12,12,0.0037
+qlora_r4,r4,-0.45,12,0,0.0042
+r4,bitfit,0.85,12,9,0.0477
+r4,linear,2.33,12,12,0.0004
+bitfit,linear,1.48,12,7,0.0598

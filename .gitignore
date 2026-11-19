@@ -1,0 +1,11 @@
+cache/
+.venv*/
+__pycache__/
+*.pyc
+kaggle_build/
+.ipynb_checkpoints/
+*.aux
+*.log
+!run_outputs/*.log
+*.out
+*.synctex.gz

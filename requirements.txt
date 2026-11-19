@@ -1,0 +1,14 @@
+# PyTorch: install the build for your GPU first (CUDA or ROCm), see https://pytorch.org
+torch>=2.4
+torchvision
+transformers==5.23.0
+peft==0.21.3
+accelerate
+bitsandbytes
+datasets
+scikit-learn
+scipy
+pandas
+matplotlib
+tabulate
+kaggle            # only for kaggle_run.py

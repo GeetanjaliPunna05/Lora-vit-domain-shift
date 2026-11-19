@@ -1,0 +1,68 @@
+[{"stream_name":"stdout","time":29.144970852,"data":"GPUs: ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":29.145017387,"data":"[phase 0] --dataset pacs --model vit_b --grid tune --lrs 1e-3 3e-3 1e-2 --seeds 0 --targets art_painting --epochs 4 | 5.40 h left\n"}
+,{"stream_name":"stdout","time":1078.899783722,"data":"== phase 0 gpu 0 (tail) ==\n"}
+,{"stream_name":"stdout","time":1078.899858023,"data":"  ep1 loss 0.5754 val_acc 0.9610\n"}
+,{"stream_name":"stdout","time":1078.899865797,"data":"  ep2 loss 0.5333 val_acc 0.9710\n"}
+,{"stream_name":"stdout","time":1078.899870267,"data":"  ep3 loss 0.5141 val_acc 0.9698\n"}
+,{"stream_name":"stdout","time":1078.89987448,"data":"  -\u003e test_acc 0.9419 f1 0.9403 params 152,839 peak 3714MB time 235s\n"}
+,{"stream_name":"stdout","time":1078.89987919,"data":"[5/5] pacs|vit_b|r4|art_painting|s0|lr0.01|e4\n"}
+,{"stream_name":"stdout","time":1078.899883445,"data":"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.\n"}
+,{"stream_name":"stdout","time":1078.89989011,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":1078.89989473,"data":"  ep0 loss 0.9112 val_acc 0.8060\n"}
+,{"stream_name":"stdout","time":1078.899899088,"data":"  ep1 loss 0.7672 val_acc 0.9194\n"}
+,{"stream_name":"stdout","time":1078.899903738,"data":"  ep2 loss 0.6372 val_acc 0.9395\n"}
+,{"stream_name":"stdout","time":1078.899908512,"data":"  ep3 loss 0.5557 val_acc 0.9610\n"}
+,{"stream_name":"stdout","time":1078.899913149,"data":"  -\u003e test_acc 0.8599 f1 0.8592 params 152,839 peak 3714MB time 234s\n"}
+,{"stream_name":"stdout","time":1078.899918053,"data":"\n"}
+,{"stream_name":"stdout","time":1078.899922388,"data":"== phase 0 gpu 1 (tail) ==\n"}
+,{"stream_name":"stdout","time":1078.899927568,"data":"  ep1 loss 0.6026 val_acc 0.9471\n"}
+,{"stream_name":"stdout","time":1078.899932177,"data":"  ep2 loss 0.5389 val_acc 0.9723\n"}
+,{"stream_name":"stdout","time":1078.899936983,"data":"  ep3 loss 0.5077 val_acc 0.9736\n"}
+,{"stream_name":"stdout","time":1078.899942018,"data":"  -\u003e test_acc 0.9185 f1 0.9124 params 108,295 peak 3102MB time 182s\n"}
+,{"stream_name":"stdout","time":1078.899946853,"data":"[4/4] pacs|vit_b|r4|art_painting|s0|lr0.003|e4\n"}
+,{"stream_name":"stdout","time":1078.899951675,"data":"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.\n"}
+,{"stream_name":"stdout","time":1078.899957289,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":1078.899961595,"data":"  ep0 loss 0.8990 val_acc 0.9534\n"}
+,{"stream_name":"stdout","time":1078.899965937,"data":"  ep1 loss 0.5534 val_acc 0.9736\n"}
+,{"stream_name":"stdout","time":1078.89997,"data":"  ep2 loss 0.5091 val_acc 0.9786\n"}
+,{"stream_name":"stdout","time":1078.899973939,"data":"  ep3 loss 0.4875 val_acc 0.9798\n"}
+,{"stream_name":"stdout","time":1078.899977982,"data":"  -\u003e test_acc 0.9360 f1 0.9319 params 152,839 peak 3714MB time 199s\n"}
+,{"stream_name":"stdout","time":1078.899982393,"data":"\n"}
+,{"stream_name":"stdout","time":1078.899993315,"data":"[phase 0] exit codes [0, 0] | total results 13 | 0.29 h elapsed\n"}
+,{"stream_name":"stdout","time":1078.899996767,"data":"[phase 1] --dataset pacs --model vit_b --grid pacs_core --seeds 0 1 2 --tuned_from pacs --epochs 4 | 5.11 h left\n"}
+,{"stream_name":"stdout","time":19115.0867055,"data":"== phase 1 gpu 0 (tail) ==\n"}
+,{"stream_name":"stdout","time":19115.086749881,"data":"  ep2 loss 0.5042 val_acc 0.9688\n"}
+,{"stream_name":"stdout","time":19115.086766223,"data":"  ep3 loss 0.4805 val_acc 0.9760\n"}
+,{"stream_name":"stdout","time":19115.086770315,"data":"  -\u003e test_acc 0.9994 f1 0.9993 params 374,023 peak 4913MB time 294s\n"}
+,{"stream_name":"stdout","time":19115.08677465,"data":"[74/75] pacs|vit_b|qlora_r4|art_painting|s2|lr0.003|e4\n"}
+,{"stream_name":"stdout","time":19115.086777933,"data":"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.\n"}
+,{"stream_name":"stdout","time":19115.086783048,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":19115.086786406,"data":"  ep0 loss 0.9010 val_acc 0.9660\n"}
+,{"stream_name":"stdout","time":19115.086789415,"data":"  ep1 loss 0.5561 val_acc 0.9786\n"}
+,{"stream_name":"stdout","time":19115.086792799,"data":"  ep2 loss 0.5144 val_acc 0.9798\n"}
+,{"stream_name":"stdout","time":19115.08679665,"data":"  ep3 loss 0.4908 val_acc 0.9761\n"}
+,{"stream_name":"stdout","time":19115.086800804,"data":"  -\u003e test_acc 0.9419 f1 0.9377 params 152,839 peak 4628MB time 286s\n"}
+,{"stream_name":"stdout","time":19115.086804464,"data":"[budget] stopping: 1 runs left for the next session\n"}
+,{"stream_name":"stdout","time":19115.086807561,"data":"\n"}
+,{"stream_name":"stdout","time":19115.086856596,"data":"== phase 1 gpu 1 (tail) ==\n"}
+,{"stream_name":"stdout","time":19115.086863173,"data":"  ep1 loss 0.5356 val_acc 0.9647\n"}
+,{"stream_name":"stdout","time":19115.086866585,"data":"  ep2 loss 0.5044 val_acc 0.9647\n"}
+,{"stream_name":"stdout","time":19115.086870155,"data":"  ep3 loss 0.4864 val_acc 0.9686\n"}
+,{"stream_name":"stdout","time":19115.086874278,"data":"  -\u003e test_acc 0.8464 f1 0.8641 params 152,839 peak 4627MB time 236s\n"}
+,{"stream_name":"stdout","time":19115.086878094,"data":"[78/78] pacs|vit_b|qlora_r4|sketch|s2|lr0.003|e4\n"}
+,{"stream_name":"stdout","time":19115.086881847,"data":"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.\n"}
+,{"stream_name":"stdout","time":19115.086886071,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":19115.086889611,"data":"  ep0 loss 0.8477 val_acc 0.9785\n"}
+,{"stream_name":"stdout","time":19115.086893136,"data":"  ep1 loss 0.5009 val_acc 0.9835\n"}
+,{"stream_name":"stdout","time":19115.086896669,"data":"  ep2 loss 0.4761 val_acc 0.9785\n"}
+,{"stream_name":"stdout","time":19115.086900533,"data":"  ep3 loss 0.4653 val_acc 0.9851\n"}
+,{"stream_name":"stdout","time":19115.086904033,"data":"  -\u003e test_acc 0.7076 f1 0.7174 params 152,839 peak 4627MB time 188s\n"}
+,{"stream_name":"stdout","time":19115.086907807,"data":"\n"}
+,{"stream_name":"stdout","time":19115.086911258,"data":"[phase 1] exit codes [0, 0] | total results 165 | 5.30 h elapsed\n"}
+,{"stream_name":"stderr","time":19117.700934724,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":19117.70096305,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":19117.976715834,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":19117.976742133,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":19118.818507607,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":19119.866001673,"data":"[NbConvertApp] Writing 326321 bytes to __results__.html\n"}
+]

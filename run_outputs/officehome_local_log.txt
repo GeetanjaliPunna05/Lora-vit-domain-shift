@@ -1,0 +1,764 @@
+[jobs] 9 in shard, 0 already done, 9 to run
+[1/9] officehome|vit_b|linear|Art|s0|lr0.001|e4
+  ep0 loss 2.8880 val_acc 0.8070
+  ep1 loss 1.5781 val_acc 0.8229
+  ep2 loss 1.4040 val_acc 0.8283
+  ep3 loss 1.3703 val_acc 0.8298
+  -> test_acc 0.8113 f1 0.7790 params 49,985 peak 952MB time 105s
+[2/9] officehome|vit_b|linear|Art|s0|lr0.003|e4
+  ep0 loss 2.1010 val_acc 0.8283
+  ep1 loss 1.2742 val_acc 0.8503
+  ep2 loss 1.2018 val_acc 0.8556
+  ep3 loss 1.1780 val_acc 0.8556
+  -> test_acc 0.8059 f1 0.7754 params 49,985 peak 952MB time 102s
+[3/9] officehome|vit_b|linear|Art|s0|lr0.01|e4
+  ep0 loss 1.6986 val_acc 0.8609
+  ep1 loss 1.1681 val_acc 0.8761
+  ep2 loss 1.0814 val_acc 0.8799
+  ep3 loss 1.0470 val_acc 0.8792
+  -> test_acc 0.7919 f1 0.7582 params 49,985 peak 952MB time 102s
+[4/9] officehome|vit_b|bitfit|Art|s0|lr0.001|e4
+  ep0 loss 2.4382 val_acc 0.8275
+  ep1 loss 1.2406 val_acc 0.8503
+  ep2 loss 1.1469 val_acc 0.8625
+  ep3 loss 1.1200 val_acc 0.8670
+  -> test_acc 0.8331 f1 0.8076 params 152,897 peak 3237MB time 165s
+[5/9] officehome|vit_b|bitfit|Art|s0|lr0.003|e4
+  ep0 loss 1.8769 val_acc 0.8556
+  ep1 loss 1.1624 val_acc 0.8792
+  ep2 loss 1.0525 val_acc 0.8853
+  ep3 loss 1.0111 val_acc 0.8929
+  -> test_acc 0.8282 f1 0.8023 params 152,897 peak 3237MB time 165s
+[6/9] officehome|vit_b|bitfit|Art|s0|lr0.01|e4
+  ep0 loss 1.7191 val_acc 0.8435
+  ep1 loss 1.2087 val_acc 0.8625
+  ep2 loss 1.0317 val_acc 0.8929
+  ep3 loss 0.9551 val_acc 0.9027
+  -> test_acc 0.8080 f1 0.7812 params 152,897 peak 3237MB time 164s
+[7/9] officehome|vit_b|r4|Art|s0|lr0.001|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.3873 val_acc 0.8359
+  ep1 loss 1.1779 val_acc 0.8716
+  ep2 loss 1.0763 val_acc 0.8777
+  ep3 loss 1.0449 val_acc 0.8853
+  -> test_acc 0.8323 f1 0.8097 params 197,441 peak 3850MB time 185s
+[8/9] officehome|vit_b|r4|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8343 val_acc 0.8723
+  ep1 loss 1.0942 val_acc 0.8906
+  ep2 loss 0.9740 val_acc 0.8913
+  ep3 loss 0.9314 val_acc 0.8936
+  -> test_acc 0.8290 f1 0.8054 params 197,441 peak 3850MB time 186s
+[9/9] officehome|vit_b|r4|Art|s0|lr0.01|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8302 val_acc 0.7964
+  ep1 loss 1.3172 val_acc 0.8480
+  ep2 loss 1.0656 val_acc 0.8853
+  ep3 loss 0.9617 val_acc 0.8906
+  -> test_acc 0.7837 f1 0.7552 params 197,441 peak 3850MB time 185s
+[lr] tuned on officehome: {'linear': 0.01, 'bitfit': 0.01, 'lora': 0.003}
+[jobs] 96 in shard, 3 already done, 93 to run
+[1/93] officehome|vit_b|linear|Clipart|s0|lr0.01|e4
+  ep0 loss 1.5788 val_acc 0.9012
+  ep1 loss 1.0303 val_acc 0.9110
+  ep2 loss 0.9660 val_acc 0.9145
+  ep3 loss 0.9342 val_acc 0.9145
+  -> test_acc 0.5879 f1 0.5900 params 49,985 peak 952MB time 89s
+[2/93] officehome|vit_b|linear|Product|s0|lr0.01|e4
+  ep0 loss 1.8306 val_acc 0.8081
+  ep1 loss 1.2374 val_acc 0.8359
+  ep2 loss 1.1311 val_acc 0.8422
+  ep3 loss 1.0884 val_acc 0.8422
+  -> test_acc 0.8874 f1 0.8846 params 49,985 peak 952MB time 88s
+[3/93] officehome|vit_b|linear|Real World|s0|lr0.01|e4
+  ep0 loss 1.8402 val_acc 0.8210
+  ep1 loss 1.2341 val_acc 0.8326
+  ep2 loss 1.1375 val_acc 0.8415
+  ep3 loss 1.0928 val_acc 0.8486
+  -> test_acc 0.8953 f1 0.8854 params 49,985 peak 952MB time 89s
+[4/93] officehome|vit_b|bitfit|Clipart|s0|lr0.01|e4
+  ep0 loss 1.6296 val_acc 0.8851
+  ep1 loss 1.1003 val_acc 0.9065
+  ep2 loss 0.9584 val_acc 0.9181
+  ep3 loss 0.8907 val_acc 0.9305
+  -> test_acc 0.6486 f1 0.6454 params 152,897 peak 3237MB time 146s
+[5/93] officehome|vit_b|bitfit|Product|s0|lr0.01|e4
+  ep0 loss 1.8408 val_acc 0.7865
+  ep1 loss 1.2631 val_acc 0.8009
+  ep2 loss 1.0822 val_acc 0.8574
+  ep3 loss 0.9907 val_acc 0.8628
+  -> test_acc 0.8815 f1 0.8753 params 152,897 peak 3237MB time 145s
+[6/93] officehome|vit_b|bitfit|Real World|s0|lr0.01|e4
+  ep0 loss 1.8972 val_acc 0.7774
+  ep1 loss 1.2780 val_acc 0.8353
+  ep2 loss 1.0898 val_acc 0.8602
+  ep3 loss 0.9983 val_acc 0.8602
+  -> test_acc 0.8841 f1 0.8736 params 152,897 peak 3237MB time 146s
+[7/93] officehome|vit_b|r4|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7647 val_acc 0.9110
+  ep1 loss 0.9909 val_acc 0.9252
+  ep2 loss 0.9020 val_acc 0.9332
+  ep3 loss 0.8678 val_acc 0.9332
+  -> test_acc 0.6360 f1 0.6328 params 197,441 peak 3850MB time 163s
+[8/93] officehome|vit_b|r4|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9756 val_acc 0.8395
+  ep1 loss 1.1351 val_acc 0.8547
+  ep2 loss 1.0179 val_acc 0.8700
+  ep3 loss 0.9659 val_acc 0.8700
+  -> test_acc 0.8923 f1 0.8881 params 197,441 peak 3850MB time 163s
+[9/93] officehome|vit_b|r4|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9841 val_acc 0.8370
+  ep1 loss 1.1503 val_acc 0.8566
+  ep2 loss 1.0204 val_acc 0.8673
+  ep3 loss 0.9707 val_acc 0.8744
+  -> test_acc 0.9050 f1 0.8963 params 197,441 peak 3850MB time 164s
+[10/93] officehome|vit_b|early|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9796 val_acc 0.8549
+  ep1 loss 1.1760 val_acc 0.8716
+  ep2 loss 1.0808 val_acc 0.8784
+  ep3 loss 1.0399 val_acc 0.8845
+  -> test_acc 0.8183 f1 0.7933 params 197,441 peak 3407MB time 170s
+[11/93] officehome|vit_b|early|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9103 val_acc 0.8994
+  ep1 loss 1.0805 val_acc 0.9163
+  ep2 loss 0.9926 val_acc 0.9216
+  ep3 loss 0.9609 val_acc 0.9207
+  -> test_acc 0.6474 f1 0.6394 params 197,441 peak 3407MB time 147s
+[12/93] officehome|vit_b|early|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1586 val_acc 0.8143
+  ep1 loss 1.2450 val_acc 0.8493
+  ep2 loss 1.1349 val_acc 0.8646
+  ep3 loss 1.0899 val_acc 0.8601
+  -> test_acc 0.8914 f1 0.8871 params 197,441 peak 3407MB time 145s
+[13/93] officehome|vit_b|early|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1504 val_acc 0.8139
+  ep1 loss 1.2579 val_acc 0.8388
+  ep2 loss 1.1454 val_acc 0.8557
+  ep3 loss 1.0941 val_acc 0.8557
+  -> test_acc 0.9029 f1 0.8928 params 197,441 peak 3407MB time 146s
+[14/93] officehome|vit_b|late|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8625 val_acc 0.8602
+  ep1 loss 1.1153 val_acc 0.8769
+  ep2 loss 0.9962 val_acc 0.8921
+  ep3 loss 0.9439 val_acc 0.8951
+  -> test_acc 0.8241 f1 0.8020 params 197,441 peak 1626MB time 128s
+[15/93] officehome|vit_b|late|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7518 val_acc 0.9038
+  ep1 loss 0.9884 val_acc 0.9145
+  ep2 loss 0.9007 val_acc 0.9216
+  ep3 loss 0.8610 val_acc 0.9225
+  -> test_acc 0.6048 f1 0.6051 params 197,441 peak 1626MB time 111s
+[16/93] officehome|vit_b|late|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.0021 val_acc 0.8179
+  ep1 loss 1.1676 val_acc 0.8395
+  ep2 loss 1.0395 val_acc 0.8511
+  ep3 loss 0.9813 val_acc 0.8574
+  -> test_acc 0.8894 f1 0.8851 params 197,441 peak 1626MB time 111s
+[17/93] officehome|vit_b|late|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.0105 val_acc 0.8192
+  ep1 loss 1.1843 val_acc 0.8504
+  ep2 loss 1.0495 val_acc 0.8620
+  ep3 loss 0.9895 val_acc 0.8575
+  -> test_acc 0.9022 f1 0.8922 params 197,441 peak 1626MB time 112s
+[18/93] officehome|vit_b|attn10|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8350 val_acc 0.8640
+  ep1 loss 1.1038 val_acc 0.8792
+  ep2 loss 0.9612 val_acc 0.8997
+  ep3 loss 0.9019 val_acc 0.9005
+  -> test_acc 0.8146 f1 0.7923 params 418,625 peak 3857MB time 189s
+[19/93] officehome|vit_b|attn10|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7524 val_acc 0.8967
+  ep1 loss 1.0043 val_acc 0.9234
+  ep2 loss 0.8870 val_acc 0.9261
+  ep3 loss 0.8429 val_acc 0.9243
+  -> test_acc 0.6314 f1 0.6259 params 418,625 peak 3857MB time 163s
+[20/93] officehome|vit_b|attn10|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9755 val_acc 0.8287
+  ep1 loss 1.1438 val_acc 0.8520
+  ep2 loss 0.9910 val_acc 0.8709
+  ep3 loss 0.9287 val_acc 0.8655
+  -> test_acc 0.8883 f1 0.8847 params 418,625 peak 3857MB time 163s
+[21/93] officehome|vit_b|attn10|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9783 val_acc 0.8228
+  ep1 loss 1.1482 val_acc 0.8495
+  ep2 loss 0.9992 val_acc 0.8789
+  ep3 loss 0.9327 val_acc 0.8833
+  -> test_acc 0.9018 f1 0.8930 params 418,625 peak 3857MB time 163s
+[22/93] officehome|vit_b|mlp4|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7772 val_acc 0.8647
+  ep1 loss 1.0791 val_acc 0.8906
+  ep2 loss 0.9534 val_acc 0.8989
+  ep3 loss 0.9004 val_acc 0.9035
+  -> test_acc 0.8331 f1 0.8055 params 418,625 peak 5049MB time 241s
+[23/93] officehome|vit_b|mlp4|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.6937 val_acc 0.9110
+  ep1 loss 0.9866 val_acc 0.9243
+  ep2 loss 0.8826 val_acc 0.9305
+  ep3 loss 0.8431 val_acc 0.9314
+  -> test_acc 0.6401 f1 0.6343 params 418,625 peak 5049MB time 207s
+[24/93] officehome|vit_b|mlp4|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8981 val_acc 0.8368
+  ep1 loss 1.1203 val_acc 0.8637
+  ep2 loss 0.9831 val_acc 0.8780
+  ep3 loss 0.9227 val_acc 0.8780
+  -> test_acc 0.8894 f1 0.8850 params 418,625 peak 5049MB time 206s
+[25/93] officehome|vit_b|mlp4|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9101 val_acc 0.8335
+  ep1 loss 1.1334 val_acc 0.8629
+  ep2 loss 0.9953 val_acc 0.8780
+  ep3 loss 0.9271 val_acc 0.8789
+  -> test_acc 0.9045 f1 0.8961 params 418,625 peak 5049MB time 208s
+[26/93] officehome|vit_b|qlora_r4|Art|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8501 val_acc 0.8663
+  ep1 loss 1.0914 val_acc 0.8929
+  ep2 loss 0.9817 val_acc 0.8982
+  ep3 loss 0.9382 val_acc 0.8997
+  -> test_acc 0.8265 f1 0.8026 params 197,441 peak 4760MB time 253s
+[27/93] officehome|vit_b|qlora_r4|Clipart|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7749 val_acc 0.9083
+  ep1 loss 0.9854 val_acc 0.9234
+  ep2 loss 0.9029 val_acc 0.9323
+  ep3 loss 0.8666 val_acc 0.9305
+  -> test_acc 0.6218 f1 0.6162 params 197,441 peak 4802MB time 217s
+[28/93] officehome|vit_b|qlora_r4|Product|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9832 val_acc 0.8233
+  ep1 loss 1.1415 val_acc 0.8448
+  ep2 loss 1.0222 val_acc 0.8628
+  ep3 loss 0.9685 val_acc 0.8673
+  -> test_acc 0.8914 f1 0.8860 params 197,441 peak 4804MB time 215s
+[29/93] officehome|vit_b|qlora_r4|Real World|s0|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9930 val_acc 0.8272
+  ep1 loss 1.1501 val_acc 0.8620
+  ep2 loss 1.0256 val_acc 0.8593
+  ep3 loss 0.9705 val_acc 0.8664
+  -> test_acc 0.9038 f1 0.8949 params 197,441 peak 4845MB time 216s
+[30/93] officehome|vit_b|linear|Art|s1|lr0.01|e4
+  ep0 loss 1.7029 val_acc 0.8465
+  ep1 loss 1.1707 val_acc 0.8754
+  ep2 loss 1.0830 val_acc 0.8845
+  ep3 loss 1.0502 val_acc 0.8853
+  -> test_acc 0.7911 f1 0.7614 params 49,985 peak 1078MB time 102s
+[31/93] officehome|vit_b|linear|Clipart|s1|lr0.01|e4
+  ep0 loss 1.5711 val_acc 0.9012
+  ep1 loss 1.0334 val_acc 0.9092
+  ep2 loss 0.9647 val_acc 0.9127
+  ep3 loss 0.9394 val_acc 0.9145
+  -> test_acc 0.5874 f1 0.5910 params 49,985 peak 1078MB time 88s
+[32/93] officehome|vit_b|linear|Product|s1|lr0.01|e4
+  ep0 loss 1.8327 val_acc 0.8152
+  ep1 loss 1.2387 val_acc 0.8323
+  ep2 loss 1.1359 val_acc 0.8368
+  ep3 loss 1.0926 val_acc 0.8413
+  -> test_acc 0.8820 f1 0.8791 params 49,985 peak 1078MB time 88s
+[33/93] officehome|vit_b|linear|Real World|s1|lr0.01|e4
+  ep0 loss 1.8332 val_acc 0.8192
+  ep1 loss 1.2373 val_acc 0.8281
+  ep2 loss 1.1327 val_acc 0.8353
+  ep3 loss 1.0911 val_acc 0.8379
+  -> test_acc 0.8976 f1 0.8881 params 49,985 peak 1078MB time 88s
+[34/93] officehome|vit_b|bitfit|Art|s1|lr0.01|e4
+  ep0 loss 1.7334 val_acc 0.8153
+  ep1 loss 1.2035 val_acc 0.8609
+  ep2 loss 1.0502 val_acc 0.8921
+  ep3 loss 0.9571 val_acc 0.8989
+  -> test_acc 0.8105 f1 0.7822 params 152,897 peak 3362MB time 168s
+[35/93] officehome|vit_b|bitfit|Clipart|s1|lr0.01|e4
+  ep0 loss 1.6296 val_acc 0.8869
+  ep1 loss 1.0787 val_acc 0.9092
+  ep2 loss 0.9533 val_acc 0.9288
+  ep3 loss 0.8895 val_acc 0.9323
+  -> test_acc 0.6396 f1 0.6409 params 152,897 peak 3362MB time 145s
+[36/93] officehome|vit_b|bitfit|Product|s1|lr0.01|e4
+  ep0 loss 1.8671 val_acc 0.7776
+  ep1 loss 1.2707 val_acc 0.8350
+  ep2 loss 1.0755 val_acc 0.8529
+  ep3 loss 0.9917 val_acc 0.8610
+  -> test_acc 0.8860 f1 0.8834 params 152,897 peak 3362MB time 145s
+[37/93] officehome|vit_b|bitfit|Real World|s1|lr0.01|e4
+  ep0 loss 1.8630 val_acc 0.7676
+  ep1 loss 1.2595 val_acc 0.8237
+  ep2 loss 1.0862 val_acc 0.8584
+  ep3 loss 0.9887 val_acc 0.8638
+  -> test_acc 0.8935 f1 0.8847 params 152,897 peak 3362MB time 145s
+[38/93] officehome|vit_b|r4|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8412 val_acc 0.8632
+  ep1 loss 1.0858 val_acc 0.8837
+  ep2 loss 0.9811 val_acc 0.8967
+  ep3 loss 0.9381 val_acc 0.8982
+  -> test_acc 0.8290 f1 0.8042 params 197,441 peak 3975MB time 190s
+[39/93] officehome|vit_b|r4|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7665 val_acc 0.9110
+  ep1 loss 0.9845 val_acc 0.9243
+  ep2 loss 0.9015 val_acc 0.9288
+  ep3 loss 0.8695 val_acc 0.9261
+  -> test_acc 0.6296 f1 0.6302 params 197,441 peak 3975MB time 163s
+[40/93] officehome|vit_b|r4|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9897 val_acc 0.8278
+  ep1 loss 1.1415 val_acc 0.8538
+  ep2 loss 1.0195 val_acc 0.8646
+  ep3 loss 0.9730 val_acc 0.8610
+  -> test_acc 0.8878 f1 0.8826 params 197,441 peak 3975MB time 162s
+[41/93] officehome|vit_b|r4|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9834 val_acc 0.8255
+  ep1 loss 1.1471 val_acc 0.8459
+  ep2 loss 1.0250 val_acc 0.8718
+  ep3 loss 0.9687 val_acc 0.8762
+  -> test_acc 0.9070 f1 0.8984 params 197,441 peak 3975MB time 163s
+[42/93] officehome|vit_b|early|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9966 val_acc 0.8511
+  ep1 loss 1.1876 val_acc 0.8716
+  ep2 loss 1.0875 val_acc 0.8830
+  ep3 loss 1.0467 val_acc 0.8845
+  -> test_acc 0.8146 f1 0.7870 params 197,441 peak 3532MB time 169s
+[43/93] officehome|vit_b|early|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9089 val_acc 0.9136
+  ep1 loss 1.0690 val_acc 0.9154
+  ep2 loss 0.9967 val_acc 0.9252
+  ep3 loss 0.9614 val_acc 0.9252
+  -> test_acc 0.6279 f1 0.6208 params 197,441 peak 3532MB time 146s
+[44/93] officehome|vit_b|early|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1687 val_acc 0.8188
+  ep1 loss 1.2566 val_acc 0.8404
+  ep2 loss 1.1387 val_acc 0.8538
+  ep3 loss 1.0973 val_acc 0.8493
+  -> test_acc 0.8892 f1 0.8831 params 197,441 peak 3532MB time 144s
+[45/93] officehome|vit_b|early|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1598 val_acc 0.8255
+  ep1 loss 1.2564 val_acc 0.8317
+  ep2 loss 1.1466 val_acc 0.8451
+  ep3 loss 1.0931 val_acc 0.8468
+  -> test_acc 0.9045 f1 0.8957 params 197,441 peak 3532MB time 146s
+[46/93] officehome|vit_b|late|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8625 val_acc 0.8549
+  ep1 loss 1.1146 val_acc 0.8716
+  ep2 loss 0.9956 val_acc 0.8853
+  ep3 loss 0.9473 val_acc 0.8837
+  -> test_acc 0.8096 f1 0.7895 params 197,441 peak 1751MB time 128s
+[47/93] officehome|vit_b|late|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7602 val_acc 0.9047
+  ep1 loss 0.9913 val_acc 0.9270
+  ep2 loss 0.9046 val_acc 0.9279
+  ep3 loss 0.8694 val_acc 0.9279
+  -> test_acc 0.6085 f1 0.6041 params 197,441 peak 1751MB time 111s
+[48/93] officehome|vit_b|late|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.0096 val_acc 0.8117
+  ep1 loss 1.1908 val_acc 0.8422
+  ep2 loss 1.0481 val_acc 0.8511
+  ep3 loss 0.9945 val_acc 0.8529
+  -> test_acc 0.8939 f1 0.8898 params 197,441 peak 1751MB time 111s
+[49/93] officehome|vit_b|late|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.0097 val_acc 0.8246
+  ep1 loss 1.1868 val_acc 0.8442
+  ep2 loss 1.0452 val_acc 0.8638
+  ep3 loss 0.9850 val_acc 0.8593
+  -> test_acc 0.9050 f1 0.8963 params 197,441 peak 1751MB time 111s
+[50/93] officehome|vit_b|attn10|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8314 val_acc 0.8625
+  ep1 loss 1.0999 val_acc 0.8701
+  ep2 loss 0.9644 val_acc 0.8906
+  ep3 loss 0.9036 val_acc 0.8944
+  -> test_acc 0.8146 f1 0.7941 params 418,625 peak 3982MB time 189s
+[51/93] officehome|vit_b|attn10|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7595 val_acc 0.9092
+  ep1 loss 0.9924 val_acc 0.9243
+  ep2 loss 0.8889 val_acc 0.9297
+  ep3 loss 0.8441 val_acc 0.9305
+  -> test_acc 0.6298 f1 0.6308 params 418,625 peak 3853MB time 163s
+[52/93] officehome|vit_b|attn10|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9896 val_acc 0.8188
+  ep1 loss 1.1611 val_acc 0.8502
+  ep2 loss 1.0107 val_acc 0.8673
+  ep3 loss 0.9476 val_acc 0.8682
+  -> test_acc 0.8795 f1 0.8759 params 418,625 peak 3857MB time 163s
+[53/93] officehome|vit_b|attn10|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9675 val_acc 0.8201
+  ep1 loss 1.1520 val_acc 0.8620
+  ep2 loss 0.9970 val_acc 0.8753
+  ep3 loss 0.9273 val_acc 0.8833
+  -> test_acc 0.9048 f1 0.8966 params 418,625 peak 3857MB time 163s
+[54/93] officehome|vit_b|mlp4|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7786 val_acc 0.8708
+  ep1 loss 1.0777 val_acc 0.8845
+  ep2 loss 0.9558 val_acc 0.8997
+  ep3 loss 0.9006 val_acc 0.9111
+  -> test_acc 0.8294 f1 0.8092 params 418,625 peak 5049MB time 242s
+[55/93] officehome|vit_b|mlp4|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7020 val_acc 0.9145
+  ep1 loss 0.9844 val_acc 0.9252
+  ep2 loss 0.8882 val_acc 0.9350
+  ep3 loss 0.8483 val_acc 0.9386
+  -> test_acc 0.6520 f1 0.6465 params 418,625 peak 5049MB time 207s
+[56/93] officehome|vit_b|mlp4|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9142 val_acc 0.8332
+  ep1 loss 1.1334 val_acc 0.8646
+  ep2 loss 0.9903 val_acc 0.8735
+  ep3 loss 0.9357 val_acc 0.8744
+  -> test_acc 0.8912 f1 0.8879 params 418,625 peak 5049MB time 206s
+[57/93] officehome|vit_b|mlp4|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9086 val_acc 0.8362
+  ep1 loss 1.1286 val_acc 0.8620
+  ep2 loss 0.9864 val_acc 0.8753
+  ep3 loss 0.9237 val_acc 0.8798
+  -> test_acc 0.9052 f1 0.8971 params 418,625 peak 5049MB time 207s
+[58/93] officehome|vit_b|qlora_r4|Art|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8415 val_acc 0.8716
+  ep1 loss 1.0867 val_acc 0.8929
+  ep2 loss 0.9778 val_acc 0.9020
+  ep3 loss 0.9340 val_acc 0.9081
+  -> test_acc 0.8195 f1 0.7946 params 197,441 peak 4761MB time 252s
+[59/93] officehome|vit_b|qlora_r4|Clipart|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7711 val_acc 0.9056
+  ep1 loss 0.9879 val_acc 0.9181
+  ep2 loss 0.9040 val_acc 0.9270
+  ep3 loss 0.8709 val_acc 0.9279
+  -> test_acc 0.6208 f1 0.6207 params 197,441 peak 4804MB time 216s
+[60/93] officehome|vit_b|qlora_r4|Product|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9913 val_acc 0.8233
+  ep1 loss 1.1514 val_acc 0.8538
+  ep2 loss 1.0200 val_acc 0.8628
+  ep3 loss 0.9755 val_acc 0.8655
+  -> test_acc 0.8865 f1 0.8843 params 197,441 peak 4846MB time 216s
+[61/93] officehome|vit_b|qlora_r4|Real World|s1|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9873 val_acc 0.8290
+  ep1 loss 1.1491 val_acc 0.8468
+  ep2 loss 1.0254 val_acc 0.8771
+  ep3 loss 0.9736 val_acc 0.8736
+  -> test_acc 0.9066 f1 0.8971 params 197,441 peak 4888MB time 190s
+[62/93] officehome|vit_b|linear|Art|s2|lr0.01|e4
+  ep0 loss 1.6974 val_acc 0.8541
+  ep1 loss 1.1690 val_acc 0.8777
+  ep2 loss 1.0851 val_acc 0.8845
+  ep3 loss 1.0459 val_acc 0.8853
+  -> test_acc 0.7944 f1 0.7602 params 49,985 peak 1122MB time 101s
+[63/93] officehome|vit_b|linear|Clipart|s2|lr0.01|e4
+  ep0 loss 1.5701 val_acc 0.8967
+  ep1 loss 1.0352 val_acc 0.9118
+  ep2 loss 0.9639 val_acc 0.9136
+  ep3 loss 0.9365 val_acc 0.9163
+  -> test_acc 0.5938 f1 0.5919 params 49,985 peak 1122MB time 87s
+[64/93] officehome|vit_b|linear|Product|s2|lr0.01|e4
+  ep0 loss 1.8374 val_acc 0.8135
+  ep1 loss 1.2393 val_acc 0.8251
+  ep2 loss 1.1281 val_acc 0.8430
+  ep3 loss 1.0903 val_acc 0.8413
+  -> test_acc 0.8822 f1 0.8795 params 49,985 peak 1122MB time 88s
+[65/93] officehome|vit_b|linear|Real World|s2|lr0.01|e4
+  ep0 loss 1.8285 val_acc 0.8059
+  ep1 loss 1.2352 val_acc 0.8290
+  ep2 loss 1.1372 val_acc 0.8370
+  ep3 loss 1.0895 val_acc 0.8415
+  -> test_acc 0.8949 f1 0.8850 params 49,985 peak 1122MB time 88s
+[66/93] officehome|vit_b|bitfit|Art|s2|lr0.01|e4
+  ep0 loss 1.7348 val_acc 0.8245
+  ep1 loss 1.1841 val_acc 0.8564
+  ep2 loss 1.0354 val_acc 0.8959
+  ep3 loss 0.9556 val_acc 0.8906
+  -> test_acc 0.7940 f1 0.7655 params 152,897 peak 3407MB time 168s
+[67/93] officehome|vit_b|bitfit|Clipart|s2|lr0.01|e4
+  ep0 loss 1.6393 val_acc 0.8762
+  ep1 loss 1.0971 val_acc 0.8994
+  ep2 loss 0.9646 val_acc 0.9225
+  ep3 loss 0.8921 val_acc 0.9225
+  -> test_acc 0.6383 f1 0.6320 params 152,897 peak 3407MB time 146s
+[68/93] officehome|vit_b|bitfit|Product|s2|lr0.01|e4
+  ep0 loss 1.8569 val_acc 0.7883
+  ep1 loss 1.2698 val_acc 0.8278
+  ep2 loss 1.0796 val_acc 0.8646
+  ep3 loss 0.9947 val_acc 0.8664
+  -> test_acc 0.8856 f1 0.8819 params 152,897 peak 3407MB time 144s
+[69/93] officehome|vit_b|bitfit|Real World|s2|lr0.01|e4
+  ep0 loss 1.8473 val_acc 0.7907
+  ep1 loss 1.2700 val_acc 0.8264
+  ep2 loss 1.0780 val_acc 0.8602
+  ep3 loss 0.9924 val_acc 0.8646
+  -> test_acc 0.8942 f1 0.8859 params 152,897 peak 3407MB time 145s
+[70/93] officehome|vit_b|r4|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8337 val_acc 0.8693
+  ep1 loss 1.0898 val_acc 0.8875
+  ep2 loss 0.9861 val_acc 0.8982
+  ep3 loss 0.9432 val_acc 0.9012
+  -> test_acc 0.8195 f1 0.7936 params 197,441 peak 4019MB time 189s
+[71/93] officehome|vit_b|r4|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7579 val_acc 0.9074
+  ep1 loss 0.9886 val_acc 0.9199
+  ep2 loss 0.9074 val_acc 0.9243
+  ep3 loss 0.8673 val_acc 0.9234
+  -> test_acc 0.6291 f1 0.6259 params 197,441 peak 3846MB time 164s
+[72/93] officehome|vit_b|r4|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9743 val_acc 0.8242
+  ep1 loss 1.1476 val_acc 0.8457
+  ep2 loss 1.0202 val_acc 0.8574
+  ep3 loss 0.9734 val_acc 0.8619
+  -> test_acc 0.8934 f1 0.8897 params 197,441 peak 3850MB time 163s
+[73/93] officehome|vit_b|r4|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9670 val_acc 0.8415
+  ep1 loss 1.1450 val_acc 0.8522
+  ep2 loss 1.0221 val_acc 0.8700
+  ep3 loss 0.9716 val_acc 0.8682
+  -> test_acc 0.9075 f1 0.8977 params 197,441 peak 3850MB time 164s
+[74/93] officehome|vit_b|early|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9784 val_acc 0.8465
+  ep1 loss 1.1774 val_acc 0.8617
+  ep2 loss 1.0884 val_acc 0.8701
+  ep3 loss 1.0423 val_acc 0.8731
+  -> test_acc 0.8121 f1 0.7880 params 197,441 peak 3407MB time 170s
+[75/93] officehome|vit_b|early|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9093 val_acc 0.9020
+  ep1 loss 1.0714 val_acc 0.9136
+  ep2 loss 0.9966 val_acc 0.9216
+  ep3 loss 0.9600 val_acc 0.9234
+  -> test_acc 0.6309 f1 0.6266 params 197,441 peak 3407MB time 146s
+[76/93] officehome|vit_b|early|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1534 val_acc 0.8152
+  ep1 loss 1.2606 val_acc 0.8395
+  ep2 loss 1.1376 val_acc 0.8529
+  ep3 loss 1.0969 val_acc 0.8547
+  -> test_acc 0.8896 f1 0.8840 params 197,441 peak 3407MB time 145s
+[77/93] officehome|vit_b|early|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.1480 val_acc 0.8112
+  ep1 loss 1.2549 val_acc 0.8397
+  ep2 loss 1.1448 val_acc 0.8575
+  ep3 loss 1.1000 val_acc 0.8611
+  -> test_acc 0.9070 f1 0.8987 params 197,441 peak 3407MB time 146s
+[78/93] officehome|vit_b|late|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8565 val_acc 0.8571
+  ep1 loss 1.1208 val_acc 0.8792
+  ep2 loss 1.0058 val_acc 0.8883
+  ep3 loss 0.9519 val_acc 0.8929
+  -> test_acc 0.8199 f1 0.7958 params 197,441 peak 1626MB time 128s
+[79/93] officehome|vit_b|late|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7477 val_acc 0.9092
+  ep1 loss 0.9891 val_acc 0.9190
+  ep2 loss 0.8996 val_acc 0.9252
+  ep3 loss 0.8619 val_acc 0.9234
+  -> test_acc 0.6172 f1 0.6121 params 197,441 peak 1626MB time 111s
+[80/93] officehome|vit_b|late|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 2.0015 val_acc 0.8152
+  ep1 loss 1.1875 val_acc 0.8430
+  ep2 loss 1.0452 val_acc 0.8556
+  ep3 loss 0.9908 val_acc 0.8574
+  -> test_acc 0.8919 f1 0.8878 params 197,441 peak 1626MB time 111s
+[81/93] officehome|vit_b|late|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9960 val_acc 0.8175
+  ep1 loss 1.1805 val_acc 0.8513
+  ep2 loss 1.0428 val_acc 0.8593
+  ep3 loss 0.9945 val_acc 0.8611
+  -> test_acc 0.9027 f1 0.8935 params 197,441 peak 1626MB time 111s
+[82/93] officehome|vit_b|attn10|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8313 val_acc 0.8541
+  ep1 loss 1.0971 val_acc 0.8883
+  ep2 loss 0.9666 val_acc 0.8959
+  ep3 loss 0.9064 val_acc 0.8997
+  -> test_acc 0.8101 f1 0.7879 params 418,625 peak 3857MB time 188s
+[83/93] officehome|vit_b|attn10|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7495 val_acc 0.9083
+  ep1 loss 0.9964 val_acc 0.9154
+  ep2 loss 0.8882 val_acc 0.9243
+  ep3 loss 0.8435 val_acc 0.9225
+  -> test_acc 0.6245 f1 0.6208 params 418,625 peak 3857MB time 163s
+[84/93] officehome|vit_b|attn10|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9692 val_acc 0.8161
+  ep1 loss 1.1666 val_acc 0.8484
+  ep2 loss 1.0063 val_acc 0.8547
+  ep3 loss 0.9455 val_acc 0.8556
+  -> test_acc 0.8860 f1 0.8833 params 418,625 peak 3857MB time 163s
+[85/93] officehome|vit_b|attn10|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9649 val_acc 0.8237
+  ep1 loss 1.1458 val_acc 0.8504
+  ep2 loss 0.9928 val_acc 0.8718
+  ep3 loss 0.9337 val_acc 0.8771
+  -> test_acc 0.9018 f1 0.8917 params 418,625 peak 3857MB time 163s
+[86/93] officehome|vit_b|mlp4|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7755 val_acc 0.8571
+  ep1 loss 1.0787 val_acc 0.8906
+  ep2 loss 0.9592 val_acc 0.8982
+  ep3 loss 0.9009 val_acc 0.9012
+  -> test_acc 0.8158 f1 0.7925 params 418,625 peak 5049MB time 242s
+[87/93] officehome|vit_b|mlp4|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.6935 val_acc 0.9092
+  ep1 loss 0.9809 val_acc 0.9261
+  ep2 loss 0.8826 val_acc 0.9288
+  ep3 loss 0.8429 val_acc 0.9297
+  -> test_acc 0.6591 f1 0.6523 params 418,625 peak 5049MB time 207s
+[88/93] officehome|vit_b|mlp4|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9012 val_acc 0.8439
+  ep1 loss 1.1335 val_acc 0.8574
+  ep2 loss 0.9897 val_acc 0.8789
+  ep3 loss 0.9328 val_acc 0.8807
+  -> test_acc 0.8898 f1 0.8847 params 418,625 peak 5049MB time 207s
+[89/93] officehome|vit_b|mlp4|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8993 val_acc 0.8406
+  ep1 loss 1.1325 val_acc 0.8477
+  ep2 loss 0.9877 val_acc 0.8629
+  ep3 loss 0.9348 val_acc 0.8736
+  -> test_acc 0.9070 f1 0.8981 params 418,625 peak 5049MB time 207s
+[90/93] officehome|vit_b|qlora_r4|Art|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.8367 val_acc 0.8587
+  ep1 loss 1.0883 val_acc 0.8815
+  ep2 loss 0.9827 val_acc 0.8974
+  ep3 loss 0.9365 val_acc 0.8974
+  -> test_acc 0.8179 f1 0.7974 params 197,441 peak 4760MB time 252s
+[91/93] officehome|vit_b|qlora_r4|Clipart|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.7651 val_acc 0.9154
+  ep1 loss 0.9937 val_acc 0.9225
+  ep2 loss 0.9057 val_acc 0.9243
+  ep3 loss 0.8693 val_acc 0.9243
+  -> test_acc 0.6220 f1 0.6220 params 197,441 peak 4804MB time 216s
+[92/93] officehome|vit_b|qlora_r4|Product|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9829 val_acc 0.8323
+  ep1 loss 1.1612 val_acc 0.8538
+  ep2 loss 1.0297 val_acc 0.8610
+  ep3 loss 0.9794 val_acc 0.8673
+  -> test_acc 0.8889 f1 0.8858 params 197,441 peak 4761MB time 215s
+[93/93] officehome|vit_b|qlora_r4|Real World|s2|lr0.003|e4
+C:\Users\NothingToSay\vit-dg\.venv-rocm\Lib\site-packages\transformers\modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+  ep0 loss 1.9761 val_acc 0.8353
+  ep1 loss 1.1441 val_acc 0.8513
+  ep2 loss 1.0198 val_acc 0.8646
+  ep3 loss 0.9774 val_acc 0.8700
+  -> test_acc 0.9050 f1 0.8954 params 197,441 peak 4803MB time 216s
+ALL DONE

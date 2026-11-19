@@ -1,0 +1,79 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Method & Art & Cart. & Photo & Sketch & Avg & Worst & F1 & Params & Mem & Time \\
+\midrule
+Linear probe & 82.4 & 67.0 & 95.4 & 33.4 & 69.5$\pm$0.8 & 33.4 & 72.3 & 0 & 0.84 & 91 \\
+BitFit & 92.2 & 87.0 & 99.6 & 72.0 & \textbf{87.7$\pm$0.3} & 72.0 & 88.3 & 103k & 3.07 & 182 \\
+\midrule
+LoRA all, $r$=1 & 93.1 & 84.2 & 99.8 & 69.0 & 86.5$\pm$1.4 & 69.0 & 87.1 & 37k & 3.66 & 207 \\
+LoRA all, $r$=4 & 94.0 & 85.3 & 99.7 & 69.8 & 87.2$\pm$0.7 & 69.8 & 87.8 & 147k & 3.65 & 202 \\
+LoRA all, $r$=16 & 92.3 & 84.9 & 99.7 & 64.3 & 85.3$\pm$1.4 & 64.3 & 86.0 & 590k & 3.66 & 204 \\
+\midrule
+Early (0--3), $r$=12 & 89.9 & 82.3 & 99.8 & 68.4 & 85.1$\pm$0.1 & 68.4 & 85.6 & 147k & 3.21 & 185 \\
+Middle (4--7), $r$=12 & 91.9 & 81.4 & 99.9 & 66.6 & 85.0$\pm$1.0 & 66.6 & 85.7 & 147k & 2.34 & 153 \\
+Late (8--11), $r$=12 & 92.1 & 78.9 & 99.5 & 51.6 & 80.5$\pm$1.2 & 51.6 & 81.8 & 147k & 1.47 & 121 \\
+\midrule
+Increasing 1/4/7 & 94.0 & 85.2 & 99.7 & 67.0 & 86.5$\pm$1.0 & 67.0 & 87.3 & 147k & 3.64 & 206 \\
+Decreasing 7/4/1 & 93.0 & 85.0 & 99.9 & 67.7 & 86.4$\pm$1.1 & 67.7 & 87.0 & 147k & 3.64 & 206 \\
+\midrule
+Attention $q,v$, $r$=10 & 93.3 & 85.2 & 99.4 & 67.4 & 86.4$\pm$0.5 & 67.4 & 86.9 & 369k & 3.65 & 205 \\
+MLP $fc_1,fc_2$, $r$=4 & 94.2 & 86.0 & 99.7 & 69.6 & 87.4$\pm$1.6 & 69.6 & 88.3 & 369k & 4.81 & 245 \\
+\midrule
+QLoRA $r$=4 (NF4) & 93.3 & 85.5 & 99.7 & 69.7 & 87.1$\pm$0.4 & 69.7 & 87.6 & 147k & 4.55 & 249 \\
+\bottomrule
+\end{tabular}
+\caption{PACS, ViT-B/16, Tesla T4. Target-domain accuracy (\%) per held-out domain, mean over 3 seeds; Avg $\pm$ sd over seeds of the domain-averaged accuracy; Worst = lowest held-out domain; F1 = macro-F1 averaged over domains; Params = trainable parameters excluding the head; Mem = peak training memory (GB); Time = training seconds per run.}
+\label{tab:pacs}
+\end{table*}
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Method & Art & Clip. & Prod. & Real & Avg & Worst & F1 & Params & Mem & Time \\
+\midrule
+Linear probe & 79.2 & 59.0 & 88.4 & 89.6 & 79.0$\pm$0.1 & 59.0 & 78.0 & 0 & 1.03 & 91 \\
+BitFit & 80.4 & 64.2 & 88.4 & 89.1 & 80.5$\pm$0.2 & 64.2 & 79.4 & 103k & 3.26 & 150 \\
+LoRA all, $r$=4 & 82.6 & 63.2 & 89.1 & 90.7 & 81.4$\pm$0.2 & 63.2 & 80.4 & 147k & 3.81 & 170 \\
+\midrule
+Early (0--3), $r$=12 & 81.5 & 63.5 & 89.0 & 90.5 & 81.1$\pm$0.3 & 63.5 & 80.0 & 147k & 3.37 & 152 \\
+Late (8--11), $r$=12 & 81.8 & 61.0 & 89.2 & 90.3 & 80.6$\pm$0.2 & 61.0 & 79.6 & 147k & 1.63 & 115 \\
+\midrule
+Attention $q,v$, $r$=10 & 81.3 & 62.9 & 88.5 & 90.3 & 80.7$\pm$0.2 & 62.9 & 79.8 & 369k & 3.78 & 169 \\
+MLP $fc_1,fc_2$, $r$=4 & 82.6 & 65.0 & 89.0 & 90.6 & \textbf{81.8$\pm$0.1} & 65.0 & 80.7 & 369k & 4.93 & 216 \\
+\midrule
+QLoRA $r$=4 (NF4) & 82.1 & 62.2 & 88.9 & 90.5 & 80.9$\pm$0.1 & 62.2 & 80.0 & 147k & 4.69 & 223 \\
+\bottomrule
+\end{tabular}
+\caption{Office-Home, ViT-B/16, RX 9070 GRE. Target-domain accuracy (\%) per held-out domain, mean over 3 seeds; Avg $\pm$ sd over seeds of the domain-averaged accuracy; Worst = lowest held-out domain; F1 = macro-F1 averaged over domains; Params = trainable parameters excluding the head; Mem = peak training memory (GB); Time = training seconds per run.}
+\label{tab:oh}
+\end{table*}
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Comparison (A vs B) & \multicolumn{2}{c}{PACS} & \multicolumn{2}{c}{Office-Home} \\
+ & $\Delta$ & $p$ & $\Delta$ & $p$ \\
+\midrule
+Early (0--3), $r$=12 vs LoRA all, $r$=4 & -2.1 & 0.003 & -0.2 & 0.223 \\
+Middle (4--7), $r$=12 vs LoRA all, $r$=4 & -2.2 & 0.015 & -- & -- \\
+Late (8--11), $r$=12 vs LoRA all, $r$=4 & -6.7 & 0.010 & -0.8 & 0.025 \\
+Early (0--3), $r$=12 vs Late (8--11), $r$=12 & +4.6 & 0.069 & +0.6 & 0.198 \\
+Middle (4--7), $r$=12 vs Late (8--11), $r$=12 & +4.4 & 0.055 & -- & -- \\
+Early (0--3), $r$=12 vs Middle (4--7), $r$=12 & +0.1 & 0.809 & -- & -- \\
+LoRA all, $r$=1 vs LoRA all, $r$=4 & -0.7 & 0.305 & -- & -- \\
+LoRA all, $r$=16 vs LoRA all, $r$=4 & -1.9 & 0.150 & -- & -- \\
+Increasing 1/4/7 vs LoRA all, $r$=4 & -0.7 & 0.298 & -- & -- \\
+Decreasing 7/4/1 vs LoRA all, $r$=4 & -0.8 & 0.167 & -- & -- \\
+Increasing 1/4/7 vs Decreasing 7/4/1 & +0.1 & 0.934 & -- & -- \\
+MLP $fc_1,fc_2$, $r$=4 vs Attention $q,v$, $r$=10 & +1.0 & 0.221 & +1.1 & 0.004 \\
+QLoRA $r$=4 (NF4) vs LoRA all, $r$=4 & -0.1 & 0.781 & -0.5 & 0.004 \\
+LoRA all, $r$=4 vs BitFit & -0.5 & 0.351 & +0.8 & 0.048 \\
+LoRA all, $r$=4 vs Linear probe & +17.7 & 0.001 & +2.3 & 0.000 \\
+BitFit vs Linear probe & +18.2 & 0.001 & +1.5 & 0.060 \\
+\bottomrule
+\end{tabular}
+\caption{Paired comparisons: mean accuracy difference A$-$B in points over the 12 matched (target domain, seed) runs, and two-sided paired $t$-test $p$-value.}
+\label{tab:tests}
+\end{table}
