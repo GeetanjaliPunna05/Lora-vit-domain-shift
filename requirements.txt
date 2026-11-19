@@ -12,3 +12,5 @@ pandas
 matplotlib
 tabulate
 kaggle            # only for kaggle_run.py
+jupyter
+notebook

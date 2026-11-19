@@ -34,6 +34,9 @@ DATASETS = {
     "pacs": ("flwrlabs/pacs", ["art_painting", "cartoon", "photo", "sketch"]),
     "officehome": ("flwrlabs/office-home", ["Art", "Clipart", "Product", "Real World"]),
 }
+DATASET_CLASSES = {
+    "pacs": ["dog", "elephant", "giraffe", "guitar", "horse", "house", "person"],
+}
 MODELS = {
     "deit_s": "facebook/deit-small-patch16-224",
     "vit_b": "google/vit-base-patch16-224-in21k",
@@ -357,6 +360,16 @@ def run_one(job, data, args, device):
     for k, val in best_state.items():
         named[k].data.copy_(val.to(named[k].device))
     test = evaluate(model, test_dl, device, amp_dtype, num_classes)
+    if args.save_dir and cfg["method"] == "lora":
+        # LoRA weights + trained head only (a few MB); the frozen backbone is reloaded from the Hub
+        out = os.path.join(args.save_dir, f"{job['dataset']}_{job['config']}_{job['target'].replace(' ', '_')}_s{job['seed']}")
+        model.save_pretrained(out)
+        with open(os.path.join(out, "demo_info.json"), "w") as f:
+            json.dump({"base_model": MODELS[job["model"]], "dataset": job["dataset"], "config": job["config"],
+                       "held_out_domain": job["target"], "seed": job["seed"], "test_acc": test["acc"],
+                       "classes": DATASET_CLASSES.get(job["dataset"]), "image_mean": list(mean),
+                       "image_std": list(std)}, f, indent=1)
+        print(f"  saved adapter to {out}", flush=True)
     peak = torch.cuda.max_memory_allocated(device) if is_cuda else 0
     del model, opt
     return {**job, "method": cfg["method"], "test_acc": test["acc"], "test_f1": test["f1"],
@@ -388,6 +401,7 @@ def main():
     ap.add_argument("--out", default="results/results.jsonl")
     ap.add_argument("--shard", default="0/1", help="i/n: run every n-th job starting at i")
     ap.add_argument("--dry_run", action="store_true", help="print parameter budgets and exit")
+    ap.add_argument("--save_dir", default=None, help="save trained LoRA adapter + head (LoRA configs only)")
     ap.add_argument("--tuned_from", default=None, help="dataset whose tuning runs (in --out) set the LRs")
     ap.add_argument("--hours", type=float, default=None,
                     help="time budget; stop starting new runs when the next one may not finish in time")

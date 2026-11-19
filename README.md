@@ -11,6 +11,20 @@ parameter budgets.
 
 ![Study design](figures/fig2_project_architecture.png)
 
+## Which file should I open?
+
+| You want to | Open | Training needed? |
+|---|---|---|
+| See the results and a live demo | **`demo_results.ipynb`** (already executed, so its outputs are visible on GitHub) | No, runs in a few minutes on CPU |
+| Classify your own images | **`predict.py`** with the trained adapter in `model/` | No |
+| Re-run the whole study | `vit_dg.py` (see [Reproduce](#reproduce)) | Yes, about 11 GPU-hours |
+
+```
+pip install -r requirements.txt
+jupyter notebook demo_results.ipynb      # results tables, significance tests, figures, live predictions
+python predict.py                        # classify the images in demo_images/
+```
+
 ## Key findings
 
 | Question | Finding (PACS, 3 seeds x 4 held-out domains) | Office-Home |
@@ -102,10 +116,39 @@ Memory and time are comparable within a dataset only (different GPUs). Paired t-
 - **Metrics:** target accuracy, macro-F1, worst-domain accuracy, expected calibration error, trainable
   parameters, peak GPU memory (`torch.cuda.max_memory_allocated`), training time.
 
+## Using the trained model
+
+`model/pacs_mlp4_sketch_s0/` is a trained LoRA adapter (1.5 MB): rank 4 on the MLP layers of all 12 blocks of a
+frozen ViT-B/16, plus the 7-class head. It was trained on PACS **photo, art painting and cartoon only**; the
+**sketch** domain was held out and reaches **76.6%** accuracy on all 3,929 sketch images. The frozen backbone
+(`google/vit-base-patch16-224-in21k`) is downloaded from the Hugging Face Hub on first use.
+
+```
+python predict.py                              # demo_images/: 7 photos (training domain) + 14 unseen sketches
+python predict.py path/to/drawing.png          # your own images
+```
+
+Example output on `demo_images/` (19/21 correct):
+
+```
+photo_elephant.png           -> elephant   92.4%  correct
+sketch_dog_1.png             -> person     87.6%  WRONG (true: dog)
+sketch_giraffe_2.png         -> giraffe    91.8%  correct
+sketch_guitar_1.png          -> guitar     91.0%  correct
+sketch_house_1.png           -> house      94.1%  correct
+```
+
+Classes: dog, elephant, giraffe, guitar, horse, house, person. To train and save another adapter:
+`python vit_dg.py --dataset pacs --configs mlp4 --targets sketch --seeds 0 --lrs 0.003 --epochs 4 --save_dir model`.
+
 ## Repository contents
 
 | Path | What |
 |---|---|
+| `demo_results.ipynb` | Results tables, significance tests, figures and live predictions, without training |
+| `predict.py` | Classify images with the trained adapter |
+| `model/pacs_mlp4_sketch_s0/` | Trained LoRA adapter + head (sketch held out) |
+| `demo_images/` | 7 PACS photos and 14 PACS sketches for the demo (`export_demo_images.py` writes them) |
 | `vit_dg.py` | Experiments: dataset caching, LODO splits, linear probe / BitFit / LoRA / QLoRA, metrics, resumable job runner |
 | `analyze.py` | Summary tables, paired t-tests and result figures |
 | `make_tables.py` | LaTeX versions of the results tables |
