@@ -67,5 +67,7 @@ if __name__ == "__main__":
     tex = main_table("pacs_vit_b_e4", "PACS, ViT-B/16, Tesla T4.", "tab:pacs", pacs)
     tex += main_table("officehome_vit_b_e4", "Office-Home, ViT-B/16, RX 9070 GRE.", "tab:oh", oh)
     tex += tests_table()
+    import os
+    os.makedirs("paper", exist_ok=True)
     open("paper/tables.tex", "w").write(tex)
     print("wrote paper/tables.tex")

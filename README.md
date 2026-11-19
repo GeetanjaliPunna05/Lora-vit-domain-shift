@@ -108,11 +108,10 @@ Memory and time are comparable within a dataset only (different GPUs). Paired t-
 |---|---|
 | `vit_dg.py` | Experiments: dataset caching, LODO splits, linear probe / BitFit / LoRA / QLoRA, metrics, resumable job runner |
 | `analyze.py` | Summary tables, paired t-tests and result figures |
-| `make_tables.py` | LaTeX results tables for the paper (`paper/tables.tex`) |
+| `make_tables.py` | LaTeX versions of the results tables |
 | `make_arch_figs.py` | Architecture diagrams `fig1_base_paper_architecture.png`, `fig2_project_architecture.png` |
 | `kaggle_run.py` | Runs the PACS grid on Kaggle GPUs (push / status / pull) |
 | `run_local_officehome.sh` | Runs the Office-Home grid on a local GPU |
-| `paper/` | Workshop-style paper (LaTeX) |
 | `figures/` | All figures |
 | `results/` | Per-run results (`*.jsonl`), summaries (`*_summary.csv/.md`), paired tests |
 | `run_outputs/` | Training logs |

@@ -9,3 +9,5 @@ kaggle_build/
 !run_outputs/*.log
 *.out
 *.synctex.gz
+
+paper/
